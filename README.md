@@ -22,6 +22,8 @@ npm install @hoangtranson/helpers
 1. String
     - `stripHTMLTags` Delete HTML tag in string
 
+2. Number
+    - `formatNumber` Format a number to a string with delimiter
 
 ## Usage
 
@@ -39,4 +41,20 @@ Guide to use the library.
 
     stripHTMLTags("<h1>test</h1>") // test
     stripHTMLTags("<h1>test<h1") // throw error Input is not HTML.
+    ```
+
+### Number
+
+1. `formatNumber` Format a number to a string with delimiter
+
+    - first parameter is number. It should be number or number with type string.
+    - second parameter is delimiter. default is comma.
+
+
+    ```javascript
+    import { formatNumber } from "@hoangtranson/helpers";
+
+    formatNumber(1000) // 1,000
+    formatNumber("1000") // 1,000
+    formatNumber(1000, ".") // 1.000
     ```
