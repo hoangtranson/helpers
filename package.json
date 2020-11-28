@@ -13,6 +13,6 @@
     "url": "git+https://github.com/hoangtranson/helpers.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@hoangtranson"
+    "registry": "https://npm.pkg.github.com"
   }
 }
