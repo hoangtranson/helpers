@@ -1,3 +1,5 @@
+const { isHTML }  = require('../Is');
+
 const StringModule = () => {
   const stripHTMLTags = (str) => {
     if (!isHTML(str)) {
@@ -5,11 +7,6 @@ const StringModule = () => {
     }
     return str.replace(/<[^>]*>/g, "");
   };
-
-  const isHTML = (str) => !(str || '')
-  .replace(/<([^>]+?)([^>]*?)>(.*?)<\/\1>/ig, '')
-  .replace(/(<([^>]+)>)/ig, '')
-  .trim();
 
   return {
     stripHTMLTags,
