@@ -14,5 +14,8 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "ava": "^3.13.0"
   }
 }

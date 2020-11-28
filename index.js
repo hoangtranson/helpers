@@ -1,1 +1,5 @@
-export const helloWorld = () => 'Howdy!'
+const StringModule = require('./String');
+
+module.exports = {
+    ...StringModule
+};
