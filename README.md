@@ -4,6 +4,8 @@
 
 - JavaScript
 - [Ava](https://github.com/avajs/ava)
+- [Rollup](https://rollupjs.org/guide/en/#overview)
+- [Babel](https://babeljs.io/)
 
 ## Install
 
