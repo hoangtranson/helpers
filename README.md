@@ -21,6 +21,7 @@ npm install @hoangtranson/helpers
 
 1. String
     - `stripHTMLTags` Delete HTML tag in string
+    - `slugify` Convert string to lower case, trim text, add hyphen.
 
 2. Number
     - `formatNumber` Format a number to a string with delimiter
@@ -41,6 +42,15 @@ Guide to use the library.
 
     stripHTMLTags("<h1>test</h1>") // test
     stripHTMLTags("<h1>test<h1") // throw error Input is not HTML.
+    ```
+2. `slugify` Convert string to lower case, trim text, add hyphen.
+    - receive a string that having space
+
+    ```javascript
+    import { slugify } from "@hoangtranson/helpers";
+
+    slugify("this is a test") // this-is-a-test
+    slugify("   This is a  test") // this-is-a-test
     ```
 
 ### Number

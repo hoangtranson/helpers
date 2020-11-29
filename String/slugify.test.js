@@ -7,7 +7,7 @@ const TestCases = [
         output: "this-is-a-test"
     },
     {
-        input: "   this is a  test",
+        input: "   This is a  test",
         output: "this-is-a-test"
     }
 ];
