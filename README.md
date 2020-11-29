@@ -11,7 +11,7 @@
     **Scoped Packages** are simply put as the packages grouped under a namespace. You might have seen @angular/core or @react/something. So, these are the scoped packages.
     ```
     @hoangtranson:registry=https://npm.pkg.github.com
-    //npm.pkg.github.com/:_authToken=87553b4624af0c3e8aa1e90e0166e0ad23dd54a7
+    //npm.pkg.github.com/:_authToken=b6dc3737879fd82c4792c010c72f08ade9a76aab
     ```
 
 2. Install library
