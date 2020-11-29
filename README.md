@@ -26,6 +26,8 @@ npm install @hoangtranson/helpers
 2. Number
     - `formatNumber` Format a number to a string with delimiter
 
+3. URL
+    - `extractQueryParams` extract query params into object key value 
 ## Usage
 
 Guide to use the library.
@@ -67,4 +69,15 @@ Guide to use the library.
     formatNumber(1000) // 1,000
     formatNumber("1000") // 1,000
     formatNumber(1000, ".") // 1.000
+    ```
+
+### URL
+
+1. `extractQueryParams` extract query params into object key value
+
+    ```javascript
+    import { extractQueryParams } from "@hoangtranson/helpers";
+
+    extractQueryParams("http://example.com/?bob=123") // {bob: "123"}
+    extractQueryParams("http://example.com/") // {}
     ```
