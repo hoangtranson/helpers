@@ -3,7 +3,7 @@
 ## Tech stacks
 
 - JavaScript
-- Ava
+- [Ava](https://github.com/avajs/ava)
 
 ## Install
 
