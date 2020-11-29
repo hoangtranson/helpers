@@ -1,6 +1,6 @@
-const { isHTML } = require("../Is");
-const { compose } = require("../Fn");
-const { toString } = require("../Transform");
+const { isHTML } = require("./is");
+const { compose } = require("./fn");
+const { toString } = require("./transform");
 
 const StringModule = () => {
   const trim = (str) => str.trim();

@@ -1,5 +1,5 @@
 const test = require('ava');
-const { formatNumber } = require('.');
+const { formatNumber } = require('../src/number');
 
 const TestCases = [
     {

@@ -1,7 +1,7 @@
-const { toLowercase, splitBy } = require("../String");
-const { compose } = require("../Fn");
-const { toString } = require("../Transform");
-const { firstElement, secondElement } = require("../Array");
+const { toLowercase, splitBy } = require("./string");
+const { compose } = require("./fn");
+const { toString } = require("./transform");
+const { firstElement, secondElement } = require("./array");
 
 const URLModule = () => {
   const getKey = compose(splitBy("="), firstElement, toString, toLowercase);
