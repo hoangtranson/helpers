@@ -6,7 +6,8 @@ const StringModule = () => {
   const trim = (str) => str.trim();
   const toLowercase = (str) => str.toLowerCase();
   const addHyphen = (str) => str.replace(/\s+/g, "-");
-  
+  const splitBy = delimiter => str => str.split(delimiter);
+
   const stripHTMLTags = (str) => {
     if (!isHTML(str)) {
       throw new Error("Input is not HTML.");
@@ -19,6 +20,8 @@ const StringModule = () => {
   return {
     stripHTMLTags,
     slugify,
+    toLowercase,
+    splitBy
   };
 };
 

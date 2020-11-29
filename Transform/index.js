@@ -1,9 +1,9 @@
 const TransformModule = () => {
-    const toString = _value => !_value ? "" : _value.toString();
-  
-    return {
-        toString,
-    };
+  const toString = (_value) => (!_value ? "" : _value.toString());
+
+  return {
+    toString,
   };
-  
-  module.exports = TransformModule();
+};
+
+module.exports = TransformModule();
