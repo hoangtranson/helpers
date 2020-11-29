@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava --match=extractQueryParams*"
+    "test": "ava",
+    "gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,14 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "ava": "^3.13.0"
+    "ava": "^3.13.0",
+    "gulp-babel": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^3.0.0"
   }
 }

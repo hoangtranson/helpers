@@ -1,5 +1,5 @@
 const test = require('ava');
-const { slugify } = require('.');
+const { slugify } = require('../dist/helpers');
 
 const TestCases = [
     {
