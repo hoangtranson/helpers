@@ -51,7 +51,7 @@ Guide to use the library.
     - if invalid (not HTML string) return `Error('Input is not HTML')`
 
     ```javascript
-    import { stripHTMLTags } from "@hoangtranson/helpers";
+    import { stripHTMLTags } from "@hoangtranson/helpers/lib";
 
     stripHTMLTags("<h1>test</h1>") // test
     stripHTMLTags("<h1>test<h1") // throw error Input is not HTML.
@@ -75,7 +75,7 @@ Guide to use the library.
 
 
     ```javascript
-    import { formatNumber } from "@hoangtranson/helpers";
+    import { formatNumber } from "@hoangtranson/helpers/lib";";
 
     formatNumber(1000) // 1,000
     formatNumber("1000") // 1,000
@@ -87,7 +87,7 @@ Guide to use the library.
 1. `extractQueryParams` extract query params into object key value
 
     ```javascript
-    import { extractQueryParams } from "@hoangtranson/helpers";
+    import { extractQueryParams } from "@hoangtranson/helpers/lib";";
 
     extractQueryParams("http://example.com/?bob=123") // {bob: "123"}
     extractQueryParams("http://example.com/") // {}
