@@ -1,5 +1,5 @@
 const test = require("ava");
-const { extractQueryParams } = require("../src/url");
+const { extractQueryParams } = require("../lib");
 
 const TestCases = [
   {
