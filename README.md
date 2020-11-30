@@ -1,5 +1,7 @@
 # helpers
 
+This helpers is a utility collection that focus on helping javascript developer resolving daily task faster.
+
 ## Tech stacks
 
 - JavaScript
