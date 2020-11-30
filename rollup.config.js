@@ -31,5 +31,5 @@ export default [
   createConfig("src/string.js", "lib/string.js", [uglify()]),
   createConfig("src/transform.js", "lib/transform.js", [uglify()]),
   createConfig("src/url.js", "lib/url.js", [uglify()]),
-  createConfig("src/index.js", "lib/index.js", [uglify()]),
+  createConfig("helpers.js", "index.js", [uglify()]),
 ];

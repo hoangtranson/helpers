@@ -1,5 +1,5 @@
 const test = require('ava');
-const { stripHTMLTags } = require('../lib');
+const { stripHTMLTags } = require('../');
 
 const TestCases = [
     {
