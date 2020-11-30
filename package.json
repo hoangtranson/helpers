@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "npm run clean && BABEL_ENV=production rollup --config rollup.config.js",
-    "test": "ava"
+    "test": "ava --match=matchPatterns*"
   },
   "author": "",
   "license": "ISC",
