@@ -1,5 +1,5 @@
 const test = require('ava');
-const { matchPatterns } = require('../src/string');
+const { matchPatterns } = require('../');
 
 const TestCases = [
     {
