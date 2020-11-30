@@ -33,6 +33,7 @@
 1. String
     - `stripHTMLTags` Delete HTML tag in string
     - `slugify` Convert string to lower case, trim text, add hyphen.
+    - `matchPatterns` check a string that match patterns or not
 
 2. Number
     - `formatNumber` Format a number to a string with delimiter
@@ -51,12 +52,14 @@ Guide to use the library.
     - if invalid (not HTML string) return `Error('Input is not HTML')`
 
     ```javascript
-    import { stripHTMLTags } from "@hoangtranson/helpers/lib";
+    import { stripHTMLTags } from "@hoangtranson/helpers";
 
     stripHTMLTags("<h1>test</h1>") // test
     stripHTMLTags("<h1>test<h1") // throw error Input is not HTML.
     ```
+
 2. `slugify` Convert string to lower case, trim text, add hyphen.
+
     - receive a string that having space
 
     ```javascript
@@ -64,6 +67,20 @@ Guide to use the library.
 
     slugify("this is a test") // this-is-a-test
     slugify("   This is a  test") // this-is-a-test
+    ```
+
+3. `matchPatterns` check a string that match patterns or not
+
+    - receive a pattern array and return a new function that take string to check match pattern or not
+
+    ```javascript
+    import { matchPatterns } from "@hoangtranson/helpers";
+
+    const patterns = [".*@gmail.com$", ".*@yahoo.com$", ".*@live.com$"];
+    const isValidEmail = matchPatterns(patterns);
+
+    isValidEmail("user1@gmail.com") // true
+    isValidEmail("user1@yopmail.com") // false
     ```
 
 ### Number
@@ -75,7 +92,7 @@ Guide to use the library.
 
 
     ```javascript
-    import { formatNumber } from "@hoangtranson/helpers/lib";";
+    import { formatNumber } from "@hoangtranson/helpers";";
 
     formatNumber(1000) // 1,000
     formatNumber("1000") // 1,000
@@ -87,7 +104,7 @@ Guide to use the library.
 1. `extractQueryParams` extract query params into object key value
 
     ```javascript
-    import { extractQueryParams } from "@hoangtranson/helpers/lib";";
+    import { extractQueryParams } from "@hoangtranson/helpers";";
 
     extractQueryParams("http://example.com/?bob=123") // {bob: "123"}
     extractQueryParams("http://example.com/") // {}

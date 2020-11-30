@@ -17,11 +17,17 @@ const StringModule = () => {
 
   const slugify = compose(toString, trim, addHyphen, toLowercase);
 
+  const matchPatterns = patterns => {
+    const masterPattern = new RegExp(patterns.join('|'));
+    return input => masterPattern.test(input);
+  }
+
   return {
     stripHTMLTags,
     slugify,
     toLowercase,
-    splitBy
+    splitBy,
+    matchPatterns
   };
 };
 
