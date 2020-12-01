@@ -1,17 +1,15 @@
 const BrowserModule = () => {
-    const isCookieDisabled = () => {
-        let cookieEnabled = navigator.cookieEnabled;
-        if (!cookieEnabled) {
-            document.cookie = 'cookieEnabled';
-            cookieEnabled = document.cookie.indexOf('cookieEnabled') != -1;
-        }
-        return !cookieEnabled;
-    }
-
-    return {
-      isCookieDisabled
-    };
+  const isCookieDisabled = () => {
+    const cookies =
+      "cookie" in document &&
+      (document.cookie.length > 0 ||
+        (document.cookie = "test").indexOf.call(document.cookie, "test") > -1);
+    return !cookies;
   };
-  
-  module.exports = BrowserModule();
-  
+
+  return {
+    isCookieDisabled,
+  };
+};
+
+module.exports = BrowserModule();

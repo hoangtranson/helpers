@@ -18,10 +18,10 @@
     "registry": "https://npm.pkg.github.com"
   },
   "ava": {
-		"require": [
-			"./tests/_setup-browser-env.js"
-		]
-	},
+    "require": [
+      "./tests/_setup-browser-env.js"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.9",
