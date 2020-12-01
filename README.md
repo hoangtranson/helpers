@@ -42,6 +42,10 @@ This helpers is a utility collection that focus on helping javascript developer 
 
 3. URL
     - `extractQueryParams` extract query params into object key value 
+
+4. Browser
+    - `isCookieDisabled` check browser cookie disable or not
+
 ## Usage
 
 Guide to use the library.
@@ -94,7 +98,7 @@ Guide to use the library.
 
 
     ```javascript
-    import { formatNumber } from "@hoangtranson/helpers";";
+    import { formatNumber } from "@hoangtranson/helpers";
 
     formatNumber(1000) // 1,000
     formatNumber("1000") // 1,000
@@ -106,8 +110,18 @@ Guide to use the library.
 1. `extractQueryParams` extract query params into object key value
 
     ```javascript
-    import { extractQueryParams } from "@hoangtranson/helpers";";
+    import { extractQueryParams } from "@hoangtranson/helpers";
 
     extractQueryParams("http://example.com/?bob=123") // {bob: "123"}
     extractQueryParams("http://example.com/") // {}
+    ```
+
+## Browser
+
+1. `isCookieDisabled` check browser cookie disable or not
+
+    ```javascript
+    import { isCookieDisabled } from "@hoangtranson/helpers";
+
+    isCookieDisabled() // false
     ```
